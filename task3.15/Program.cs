@@ -82,12 +82,13 @@ namespace task3._15
                     a6 = a6 * 10 + qaliq4;    //1357
 
                 }
-                int x = a6 - l; //-9200754                     //Sonra 7 reqemli ededin tek yerde dayan reqemlerinde  aalinan ededi cix.
-
-                //Cavabin axirdan II reqemi ile axirinci reqemin arasina 88 elave et.
-
-
-
+                long x = a6 - l; //-9200754                     //Sonra 7 reqemli ededin tek yerde dayan reqemlerinde  aalinan ededi cix.
+                x = x * (-1);
+                                                       //Cavabin axirdan II reqemi ile axirinci reqemin arasina 88 elave et.
+                long qaliq5 = x % 10;
+                x = (x * 100 + 88) * 10 + qaliq5;
+                
+                Console.WriteLine(x);
 
             }
             else
